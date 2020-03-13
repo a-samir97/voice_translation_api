@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/ahmedsamir/Desktop/voice_translation_api/voice_api/voice_api/translation-api-project-261805-b98f193a7112.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '{}/translation-api-project-261805-b98f193a7112.json'.format(BASE_DIR)
 
 # Application definition
 

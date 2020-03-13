@@ -2,7 +2,13 @@ from firebase_admin import storage, credentials, db
 import firebase_admin
 
 
-cred = credentials.Certificate(r'/home/ahmedsamir/Desktop/voice_translation_api/voice_api/api/voicetranslation-b5526-firebase-adminsdk-a932h-9f728d97f8.json')
+import os
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+FILE_PATH = '{}/voicetranslation-b5526-firebase-adminsdk-a932h-9f728d97f8.json'.format(BASE_DIR)
+cred = credentials.Certificate(FILE_PATH)
 
 firebase_admin.initialize_app(cred, {
     'storageBucket':'voicetranslation-b5526.appspot.com'
