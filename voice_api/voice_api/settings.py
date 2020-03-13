@@ -25,7 +25,7 @@ SECRET_KEY = 'r!5cr2$wrrksqko9w6989!no4#*wp=z2%6u!y5%uv^k+*gku!@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/ahmedsamir/Desktop/voice_translation_api/voice_api/voice_api/translation-api-project-261805-b98f193a7112.json'
 
