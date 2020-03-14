@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from api.utils import firebase_functionality,remove_noise, upload_file, speechToText
+from voice_api.api.utils import firebase_functionality,remove_noise, upload_file, speechToText
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
