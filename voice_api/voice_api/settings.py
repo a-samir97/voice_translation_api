@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # our apps
-    'api.apps.ApiConfig',
+    'voice_api.api.apps.ApiConfig',
 
 ]
 
