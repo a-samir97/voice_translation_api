@@ -25,7 +25,7 @@ SECRET_KEY = 'r!5cr2$wrrksqko9w6989!no4#*wp=z2%6u!y5%uv^k+*gku!@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://voice-translation-api.herokuapp.com/', '127.0.0.1']
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '{}/translation-api-project-261805-b98f193a7112.json'.format(BASE_DIR)
 
