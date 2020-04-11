@@ -70,6 +70,7 @@ import librosa.display
 import noisereduce as nr
 # convert audio to flac format
 from pydub import AudioSegment
+import os
 
 def fftnoise(f):
     f = np.array(f, dtype="complex")
@@ -88,7 +89,10 @@ def band_limited_noise(min_freq, max_freq, samples=1024, samplerate=1):
 
 def remove_noise_function(file_name):
     #read audio
-    data, sr = librosa.load(f'{ file_name }.wav', duration=5.0)
+    audio = f'{ file_name }.wav'
+    path = os.fspath(audio)
+
+    data, sr = librosa.load(path=path, duration=5.0)
 
     #Remoove noise 
     # select section of data that is noise
