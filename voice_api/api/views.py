@@ -17,7 +17,7 @@ def home(request):
 
     firebase_functionality.download_from_firebase(FILENAME)
 
-    remove_noise.remove_noise_function(FILENAME)
+    # remove_noise.remove_noise_function(FILENAME)
 
     upload_file.upload_file_to_bucket(FILENAME, FILENAME)
     
