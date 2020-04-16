@@ -64,9 +64,7 @@ from scipy.io import wavfile
 import scipy.signal
 import numpy as np
 import matplotlib.pyplot as plt
-import librosa
 import IPython.display as ipd
-import librosa.display
 import noisereduce as nr
 # convert audio to flac format
 from pydub import AudioSegment
