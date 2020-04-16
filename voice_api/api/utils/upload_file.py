@@ -12,10 +12,7 @@ def upload_file_to_bucket(source_file_name, destination_blob_name):
     source_file_name = "local/path/to/file"
     destination_blob_name = "storage-object-name"
     """
-    wav_audio = AudioSegment.from_file(f"{ source_file_name }.wav", format="wav")
-    wav_audio.export(f"{ source_file_name }.flac", format="flac")
-
-    filename =  source_file_name + ".flac"
+    filename =  source_file_name + ".wav"
     storage_client = storage.Client()
     bucket = storage_client.bucket(BUCKET_NAME)
     blob = bucket.blob(filename)
